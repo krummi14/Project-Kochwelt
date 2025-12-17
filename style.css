@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2') format('woff2'),
+         url('fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2') format('woff2'),
+         url('fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2') format('woff2'),
+         url('fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2') format('woff2'),
+         url('fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2') format('woff2'),
+         url('fonts/1Ptug8zYS_SKggPNyC0ITw.woff2') format('woff2'),
+         url('fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2') format('woff2'),
+         url('fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2') format('woff2'),
+         url('fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2') format('woff2'),
+         url('fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Verhindert FOIT, verbessert Ladezeit */
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+/* 1. Home
+- header;	Hintergrund: rgb(255,255,255)
+		Schriftfarbe: rgb(64,59,59)
+		Schriftfarbe Link: rgb(2,128,0)
+
+- Sektion 1; 	Überschrift: französische Croissants: rgb(0,0,0)
+		Hintergrund: rgb(255,255,255)
+		Beschreibung: rgb(101,101,136)
+		Button: rgb(2,128,0) (Button Text: rgb(255,255,255))
+
+- Sektion 2;	Überschrift: Lust auf was Neues? rgb(0,0,0)
+		Hintergrund: rgb(239,239,239)
+		Rezept Titel: rgb(0,0,0)
+- Sektion 3;	Überschrift: Pfanne vs. Wok – was ist besser: rgb(0,0,0)
+		Hintergrund: rgb(255,255,255)
+		Beschreibung: rgb(101,101,136)
+- footer;	Hintergrund: rgb(64,59,59)
+
+2. Rezeptseite
+- Überschrift:						rgb(0,0,0)
+- Hintergrund Dauer, Schwierigkeit & Datum: 	rgb(239,239,239)
+- Text Dauer, Schwierigkeit & Datum:		rgb(0,0,0)
+- Hintergrund Zutatenliste: 				rgb(255,255,255) & rgb(239,239,239)
+- Text Zutatenliste:					rgb(0,0,0)
+
+3. Kontaktseite
+- Fomularhintergrund:				rgb(220,220,220)
+- Kontaktieren sie uns:				rgb(35,35,35)
+- Formularfelder:					rgb(255,255,255)
+- Button Hintergrund:					rgb(2,128,0)
+- Button Text:						rgb(255,255,255) */
