@@ -10,9 +10,9 @@
 
 <body>
 
-    <header>
+    <header class="nav_header">
         <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        <nav>
+        <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
             <a class="navLink" href="chili.html">Rezept des Tages</a>
             <a class="navLink" href="contact.html">Kontakt</a>
@@ -20,29 +20,39 @@
         </nav>
     </header>
 
-    <section class="recept_header">
-        <h2>Chili con Carne</h2>
-        <img class="chili_img" src="./img/chili.jpg" alt="picture of chili con carne">
+    <main>
+        <header class="recept_header">
+            <h2>Chili con Carne</h2>
+            <img class="chili_img" src="./img/chili.jpg" alt="picture of chili con carne">
 
-        <div class="info_container">
-            <div class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
-                <time>30 Min.</time>
-            </div>
+            <section class="info_container">
+                <span class="info_icon_container">
+                    <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
+                    <time>30 Min.</time>
+                </span>
 
-            <div class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/brain-solid.svg" alt="level">
-                <p>simple</p>
-            </div>
+                <span class="info_icon_container">
+                    <img class="recept_icon" src="./img/icons/brain-solid.svg" alt="level">
+                    <p>simple</p>
+                </span>
 
-            <div class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/calendar-alt-regular.svg" alt="create date">
-                <time datetime="2025-12-23 21:00">23.12.2025</time>
-            </div>
-        </div>
-    </section>
+                <span class="info_icon_container">
+                    <img class="recept_icon" src="./img/icons/calendar-alt-regular.svg" alt="create date">
+                    <time datetime="2025-12-23 21:00">23.12.2025</time>
+                </span>
+            </section>
+        </header>
 
+        <article class="ingredientsList">
+            <div class="seperator"></div>
+            <form>
+                <label for="amount">Zutaten für</label>
+                <input id="amount" min="1" max="20" type="number">
+                <button>Portionen</button>
+            </form>
+        </article>
 
+    </main>
 </body>
 
 </html>
