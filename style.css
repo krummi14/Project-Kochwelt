@@ -16,9 +16,19 @@
     font-display: swap; /* Verhindert FOIT, verbessert Ladezeit */
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Raleway', sans-serif;
     margin: 0;
+}
+
+main {
+    flex-grow: 1;
 }
 
 a {
@@ -27,6 +37,11 @@ a {
     color: rgb(64,59,59);
     font-weight: bold;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
 }
 
 h2 {
@@ -358,7 +373,51 @@ h4 {
     margin-top: 24px;
     margin-bottom: 80px;
 }
+/* end of style of classes used in chili.html*/
 
+/* start of style of classes used in impressum.html*/ 
+
+.impressum_container {
+    height: 100%;
+    padding: 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.impressum_header {
+    margin-bottom: 24px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.impressum_contact_header {
+    margin-bottom: 16px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.border_impressum_container {
+    border: 4px solid rgb(239,239,239);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 64px;
+    padding: 32px;
+}
+
+.impressum_text {
+    text-align: center;
+}
+
+.link_impressum {
+    color: rgb(64,59,59);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.link_impressum:hover {
+    font-weight: bold;
+}
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
 		Schriftfarbe: rgb(64,59,59)
