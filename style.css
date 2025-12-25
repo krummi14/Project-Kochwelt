@@ -159,7 +159,7 @@ footer {
     align-items: center;
     padding:0 180px;
     padding-top: 48px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 .wok_container {
@@ -240,7 +240,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 32px;
 }
 
 .chili_recept {
@@ -251,6 +251,7 @@ footer {
     background-color: rgb(239,239,239);
     height: 1px;
     width: 100%;
+    margin-top: 56px;
 }
 
 #amount {
@@ -288,11 +289,76 @@ label {
 li {
     padding: 16px 32px;
 }
+
 .ingredient {
     background: rgb(239,239,239);
     border-radius: 8px;
-
 }
+
+h3 {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.preparation_text {
+    text-align: justify;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.nutritionalValue_header {
+    font-size: 16px; 
+    font-style: oblique;
+    margin-bottom: 8px;
+}
+
+.nutritionalValue_table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-collapse: separate; /* Wichtig: Rahmen müssen getrennt sein */
+    border-spacing: 16px;
+    margin-bottom: 32px;
+}
+
+.nutritionalValue_info_header {
+    text-align: center;
+    background: rgb(239,239,239);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nutritionalValue_info {
+    text-align: center;
+    background: rgb(2,128,0);
+    color: white;
+    border-radius: 8px;
+    padding: 0 8px;
+}
+
+.profile_img {
+    border-radius: 100%;
+    width: 80px;
+}
+
+.creator_name {
+    font-size: 24px;
+    padding-left: 32px;
+}
+
+.profile_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 80px;
+}
+
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
 		Schriftfarbe: rgb(64,59,59)
