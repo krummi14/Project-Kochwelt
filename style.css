@@ -40,15 +40,15 @@ p {
     margin: 0;
 }
 
-button {
+.button {
     background-color:rgb(2,128,0);
-    border: none;
     color: rgb(255,255,255);
     padding: 16px 64px;
     cursor: pointer;
+    border-width: 0;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -209,7 +209,9 @@ footer {
 
 /* start of style of classes used in chili.html*/
 .recept_header {
-    padding: 80px 180px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 80px;
 }
 
 .chili_img {
@@ -238,7 +240,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-bottom: 72px;
+    margin-bottom: 56px;
 }
 
 .ingredientsList {
@@ -252,9 +254,30 @@ footer {
 }
 
 #amount {
+    border: 2px solid rgb(239,239,239);
     height: 42px;
     width: 200px;
-    border-width: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none; /*without standard focus ring*/
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+#amount:focus {
+    border: 2px solid rgb(239,239,239);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.portion_form {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
