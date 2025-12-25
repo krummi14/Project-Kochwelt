@@ -5,19 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt Impressum</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Impressum</h1>
-    <p>Daniel Krummhauer<br />
-        Oststra&szlig;e 14<br />
-        74246 Eberstadt</p>
+    <header class="nav_header">
+        <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+        <nav class="nav_menu">
+            <a class="navLink" href="index.html">Start</a>
+            <a class="navLink" href="chili.html">Rezept des Tages</a>
+            <a class="navLink" href="contact.html">Kontakt</a>
+            <a class="navLink" href="impressum.html">Impressum</a>
+        </nav>
+    </header>
 
-    <h2>Kontakt</h2>
-    <p>Telefon: +49 177 3989751<br />
-        E-Mail: d.krummhauer@gmail.com</p>
+    <main>
+        <section class="impressum_container">
+            <div class="border_impressum_container">
+                <h1 class="impressum_header">Impressum</h1>
+                <p class="impressum_text">Daniel Krummhauer<br />
+                    Oststra&szlig;e 14<br />
+                    74246 Eberstadt</p>
 
-    <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+                <h2 class="impressum_contact_header">Kontakt</h2>
+                <p class="impressum_text">Telefon: <a class="link_impressum" href="tel:01773989751" >+49 177 3989751</a> <br />
+                    E-Mail: <a class="mailLink link_impressum" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a></p>
+
+                <p class="impressum_text">Quelle: <a class="link_impressum" href="https://www.e-recht24.de">eRecht24</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer_impressum" href="impressum.html">Impressum</a>
+        <address class="mailLink_container">
+            <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <!--placeholder for mailadress of teammate-->
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <!--placeholder for mailadress of teammate-->
+        </address>
+        <div class="social_media">
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank">
+                <img class="footer_img" src="./img/facebook_logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer_img" src="./img/instagrram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
