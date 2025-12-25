@@ -45,17 +45,19 @@
 
         <article class="chili_recept">
             <div class="seperator"></div>
+
             <form class="portion_form">
                 <label for="amount">Zutaten für</label>
                 <input id="amount" min="1" max="20" type="number" placeholder="4">
                 <button class="button" type="button">Portionen</button>
             </form>
+
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
                     <li class="ingredient">500g Rinderhackfleisch</li>
                     <li>800g passierte Tomaten</li>
                     <li class="ingredient">1 rote Paprikaschote(n)</li>
-                    <li>1 große Knoblauchzehe</li>
+                    <li>1 große Knoblauchzehe(n)</li>
                     <li class="ingredient">1 Dose(n) Kidneybohnen</li>
                     <li>1 Dose(n) Mais</li>
                     <li class="ingredient">1 Zwiebel(n)</li>
@@ -66,9 +68,106 @@
                     <li>Pfeffer</li>
                 </ul>
             </section>
-        </article>
 
+            <section class="preparation_section">
+                <h3>Zubereitung</h3>
+
+                <span class="info_container">
+                    <span class="info_icon_container">
+                        <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
+                        <time>ca. 10 Minuten</time>
+                    </span>
+                    <span class="info_icon_container">
+                        <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
+                        <time>Gesamtzeit ca. 30 Minuten</time>
+                    </span>
+                </span>
+
+                <p class="preparation_text">
+                    Die Zwiebel(n) und Knoblauchzehe(n) schälen und klein würfeln.
+                    In einem großen Topf/Schmorpfanne Olivenöl erhitzen und die Zwiebel- und Knoblauchwürfel darin
+                    andünsten.
+                    Im Anschluss gibst Du das Rinderhackfleisch in die Pfanne, vermengst es mit den Zwiebeln und brätst
+                    es bei hoher Hitze krümelig an.
+                    Eine gute Prise Salz darüber geben.
+                    Währenddessen kannst Du die Paprikaschote(n) waschen, entkernen und klein würfeln sowie die
+                    Kidneybohnen und Mais abgießen
+                    und kurz zur Seite stellen.
+                    Wenn das Hackfleisch schön krümelig angebraten ist, würzt Du es mit Paprikapulver und gibst
+                    Tomatenmark dazu, beides kurz mit anrösten.
+                    Jetzt gibst Du die Paprikawürfel in die Pfanne und lässt sie kurz mit anrösten.
+                    Anschließend kommen noch passierte Tomaten, die Kidneybohnen und den Mais hinein und Du schmeckst
+                    das Chili nach Belieben mit Cayennepfeffer und Salz ab.
+                    Das Chili con Carne lässt Du nun mit Deckel für 20-25 Minuten auf mittlerer Stufe köcheln, je
+                    nachdem wie knackig Du das Gemüse haben möchtest.
+                    Ich wünsche Dir mit meinem Chili con Carne Rezept einen <strong>guten Appetit!</strong>
+                </p>
+            </section>
+
+            <aside class="tip_container">
+                <h4>Zusätzlicher Hinweis</h4>
+
+                <p class="preparation_text">
+                    Falls Du das Chili sehr scharf haben möchtest, kannst Du eine Peperoni oder Chilischote
+                    (die Sorte bestimmt die Schärfe) waschen, und mit oder ohne Kerne bzw. Fasern
+                    (die Fasern beinhalten die Schärfe) klein gewürfelt mit den Zwiebeln andünsten.
+                    Wenn das Chili dunkler werden soll dann solltest Du Backkakao unterrühren.
+                </p>
+            </aside>
+
+            <section class="nutritionalValue-container">
+                <h3>Nährwerte</h3>
+
+                <table class="nutritionalValue_table">
+                    <caption class="nutritionalValue_header">Nährwerte pro Portion:</caption>
+                    <tbody>
+                        <tr>
+                            <th class="nutritionalValue_info_header">Kalorien</th>
+                            <th class="nutritionalValue_info_header">Kolenhydrate</th>
+                            <th class="nutritionalValue_info_header">Eiweis</th>
+                            <th class="nutritionalValue_info_header">Fett</th>
+                        </tr>
+                        <tr>
+                            <td class="nutritionalValue_info">582 kcal</td>
+                            <td class="nutritionalValue_info">28 g</td>
+                            <td class="nutritionalValue_info">30 g</td>
+                            <td class="nutritionalValue_info">37 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="creator_container">
+                <h4>Rezept erstellt von</h4>
+
+                <div class="profile_container">
+                    <img class="profile_img" src="./img/profile.png" alt="profile picture">
+                    <p class="creator_name">Daniel</p>
+                </div>
+            </section>
+        </article>
     </main>
+
+    <footer>
+        <a class="footer_impressum" href="impressum.html">Impressum</a>
+        <address class="mailLink_container">
+            <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <!--placeholder for mailadress of teammate-->
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <!--placeholder for mailadress of teammate-->
+        </address>
+        <div class="social_media">
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank">
+                <img class="footer_img" src="./img/facebook_logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer_img" src="./img/instagrram_logo.png" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
