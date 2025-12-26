@@ -469,7 +469,13 @@ h4 {
     border: 2px solid rgb(239,239,239);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
+/* end of style of classes used in contact.html*/
 
+/* start of style of classes used in send_mail.html*/
+
+.sendMail_header {
+    padding: 64px 180px;
+}
 /* 1. Home
 - header;	Hintergrund: rgb(255,255,255)
 		Schriftfarbe: rgb(64,59,59)
