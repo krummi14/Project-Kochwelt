@@ -335,7 +335,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border-collapse: separate; /* Wichtig: Rahmen müssen getrennt sein */
+    border-collapse: separate; /* Important: Borders have to been separate */
     border-spacing: 16px;
     margin-bottom: 32px;
 }
@@ -371,6 +371,15 @@ h4 {
     align-items: center;
     margin-top: 24px;
     margin-bottom: 80px;
+}
+
+.ingredient_text {
+    display: flex;
+    flex-direction: row;
+}
+
+.textspace {
+    margin-right: 4px;
 }
 /* end of style of classes used in chili.html*/
 
