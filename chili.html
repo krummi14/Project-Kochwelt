@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chili con Carne Rezept</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icons" href="./img/logo_small.png">
+    <link rel="icon" href="./img/logo_small.png">
     
 </head>
 
@@ -51,22 +51,22 @@
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
                 <input id="amount" value="4" min="1" max="20" type="number" >
-                <button onclick="calculatePortion()" class="button" type="button">Portionen</button>
+                <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
             </form>
 
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
-                    <li class="ingredient"> <div id="amount_mincemeat">500</div>g Rinderhackfleisch</li>
-                    <li>800g passierte Tomaten</li>
-                    <li class="ingredient">1 rote Paprikaschote(n)</li>
-                    <li>1 große Knoblauchzehe(n)</li>
-                    <li class="ingredient">1 Dose(n) Kidneybohnen</li>
-                    <li>1 Dose(n) Mais</li>
-                    <li class="ingredient">1 Zwiebel(n)</li>
-                    <li>50g Tomatenmark</li>
-                    <li class="ingredient">2 TL Paprikapulver, edelsüß</li>
-                    <li>2 EL Olivenöl</li>
-                    <li class="ingredient">Salz</li>
+                    <li class="ingredient ingredient_text"> <div id="amount_mincemeat">500</div>g Rinderhackfleisch</li>
+                    <li class="ingredient_text"><div id="amount_tomato">800</div>g passierte Tomaten</li>
+                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_paprika">1</div>rote Paprikaschote(n)</li>
+                    <li class="ingredient_text"><div class="textspace" id="amount_garlic">1</div> große Knoblauchzehe(n)</li>
+                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_beans">1</div>Dose(n) Kidneybohnen</li>
+                    <li class="ingredient_text"><div class="textspace" id="amount_corn">1</div>Dose(n) Mais</li>
+                    <li class="ingredient ingredient_text"> <div class="textspace" id="amount_onion">1</div>Zwiebel(n)</li>
+                    <li class="ingredient_text"><div id="amount_tomatopaste">50</div>g Tomatenmark</li>
+                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_paprikapowder">2</div>TL Paprikapulver, edelsüß</li>
+                    <li class="ingredient_text"><div class="textspace" id="amount_oliveoil">2</div>EL Olivenöl</li>
+                    <li>Salz</li>
                     <li>Pfeffer</li>
                 </ul>
             </section>
