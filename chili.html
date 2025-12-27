@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chili con Carne Rezept</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -48,13 +49,13 @@
 
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
-                <input id="amount" min="1" max="20" type="number" placeholder="4">
-                <button class="button" type="button">Portionen</button>
+                <input id="amount" value="4" min="1" max="20" type="number" >
+                <button onclick="calculatePortion()" class="button" type="button">Portionen</button>
             </form>
 
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
-                    <li class="ingredient">500g Rinderhackfleisch</li>
+                    <li class="ingredient"> <div id="amount_mincemeat">500</div>g Rinderhackfleisch</li>
                     <li>800g passierte Tomaten</li>
                     <li class="ingredient">1 rote Paprikaschote(n)</li>
                     <li>1 große Knoblauchzehe(n)</li>
@@ -168,6 +169,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
