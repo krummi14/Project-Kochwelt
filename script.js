@@ -22,7 +22,7 @@ function calculateAmount(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount 
     let myInput = document.getElementById("amount").value;
-
+        console.log(myInput);
     // create variable basic portion for four (4) portions
     let basicPortion = 4;
 
@@ -30,7 +30,7 @@ function calculateAmount(id, referenceAmount) {
     let newAmount = (referenceAmount / basicPortion) * myInput;
 
     // to log onclick on button, set console.log(result) here
-    // console.log(result);
+    // console.log(newAmount);
 
     // writes calculated amount in div container with id (generally -> because of function parameter: id)
     document.getElementById(id).innerHTML = newAmount;
@@ -45,8 +45,6 @@ function checkValue(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount
     let myInput = document.getElementById("amount").value;
-    let form = document.getElementById('portion_form');
-
 
     if (myInput < 1 || myInput > 20) {
     
