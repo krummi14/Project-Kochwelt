@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="nav_header">
+    <header class="nav_header hide_mobile">
         <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
         <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
@@ -23,18 +23,22 @@
 
     <main>
         <section class="recept">
-            <img class="croissant_img" src="./img/croissant.jpg" alt="croissant picture">
+            <img class="croissant_img display_none_img" src="./img/croissant.jpg" alt="croissant picture">
             <div class="croissant_recept_container">
-                <article>
+                <article class="text_align_respo">
                     <h2>Französische Croissants</h2>
                     <p class="croissant_discription">
                         Schmackhafte Croissants können auch zu Hause einfach gebacken werden.
                         Mit ca. 30min Aufwand kannst du ein wundervolles Frühstück zaubern.
                     </p>
                 </article>
-                <a href="croissant.html"> <!--croissant.html is placeholder for croissant recept-->
-                    <button class="button" type="button">Rezept öffnen</button>
-                </a>
+                <div class="img_btn_container_repo">
+                    <img class="croissant_img display_none_croissantImg" src="./img/croissant.jpg" alt="croissant picture">
+                    <a href="croissant.html">
+                        <button class="button marg_btn" type="button">Rezept öffnen</button>
+                    </a>
+                    
+                </div>
             </div>
         </section>
 
@@ -59,12 +63,11 @@
                         </figcaption>
                     </figure>
                 </a>
-                <a class="quickLink" href="chili.html"> <!--recept.html is placeholder for third meal-->
+                <a class="quickLink" href="chili.html">
                     <figure>
-                        <img class="recept_wok_img" src="./img/chili.jpg" alt="picture of first recept">
-                        <!--croissant.jpg is placeholder for picture of third meal-->
+                        <img class="recept_wok_img" src="./img/chili.jpg" alt="picture of chili">
                         <figcaption>
-                            Frische Croissants
+                            Scharfes Chili
                         </figcaption>
                     </figure>
                 </a>
@@ -79,7 +82,7 @@
                     Neque, id totam pariatur dolor tempora alias atque nam distinctio perspiciatis
                     deleniti aliquam laboriosam facilis dicta eveniet consequatur nihil, odit sunt velit.
                 </figcaption>
-                <img class="recept_wok_img" src="./img/wok.jpg" alt="picture of wok">
+                <img class="recept_wok_img recept_wok_img_width" src="./img/wok.jpg" alt="picture of wok">
             </figure>
         </section>
     </main>
