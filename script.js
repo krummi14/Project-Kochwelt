@@ -1,4 +1,4 @@
-// function for contact.html
+// function for contact.html, Integration of Formspree and guid to send_mail.html page
 // sendMail()
 function sendMail(event) {
     event.preventDefault();
@@ -17,7 +17,7 @@ function sendMail(event) {
     });
 }
 
-// function calculatePortion(): Calculates the amount of ingredient after "onclick" on button with class = button
+// function calculateAmount(): Calculates the amount of ingredient after "onclick" on button with class = button
 function calculateAmount(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount 
