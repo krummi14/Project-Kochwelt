@@ -105,12 +105,71 @@ footer {
     display: flex;
     align-items: end;
 }
+
+@media(min-width: 768px) and (max-width:1235px)
+{
+    .hide_mobile {
+        padding: 16px 80px;
+    }
+
+    h2 {
+    font-size: 24px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    p {
+    font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 48px;
+    }
+
+    footer {
+        padding: 64px 80px;
+    }
+
+    p {
+    font-size: 14px;
+    }
+}
+
+@media(min-width: 320px) and (max-width:767px)
+{
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .marg_btn {
+        padding: 8px 48px;
+        margin-top: 32px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 64px 40px;
+    }
+
+}
+
 /* end of style of classes used in all html files (global)*/
 
 /* start of style of classes used in index.html*/
 .croissant_img {
     width: 500px;
     border-radius: 8px;
+}
+
+.display_none_croissantImg {
+     display: none;
 }
 
 .menu_logo {
@@ -146,8 +205,8 @@ footer {
 }
 
 .recept_wok_img {
-    width: 240px;
-    height: 232px;
+    width: 280px;
+    height: 240px;
     border-radius: 8px;
 }
 
@@ -225,6 +284,155 @@ footer {
 .footer_impressum {
     font-size: 16px;
     color: rgb(255,255,255);
+}
+
+@media(min-width: 768px) and (max-width:1235px)
+{
+    .croissant_img {
+        height: 250px;
+    }
+
+    .croissant_recept_container {
+        padding-left: 24px;
+    }
+
+    .recept {
+        padding: 80px 80px;
+    }
+
+    .croissant_discription {
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+
+    .display_none_croissantImg {
+        display: none;
+    }
+
+    .fancyNew {
+        padding: 0 80px;
+    }
+
+    .recept_wok_img {
+        width: 180px;
+        height: 140px;
+    }
+
+    .plateVsSwok {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .wok_discription {
+        padding-right: 48px;
+        padding-top: 16px;
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px)
+{
+   .recept {
+        padding: 80px 40px;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .croissant_recept_container {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .text_align_respo {
+        text-align: center;
+    }
+
+    .croissant_discription {
+        padding-bottom: 32px;
+    }
+
+    .croissant_img {
+        width: 100%;
+    }
+
+    .display_none_img {
+        display: none;
+    }
+
+    .img_btn_container_repo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .display_none_croissantImg {
+        display: block;
+    }
+
+    .quickLink_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quickLink {
+        margin-bottom: 48px;
+    }
+
+    .fancyNew {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .recept_wok_img {
+        width: 180px;
+        height: 140px;
+    }
+
+    .plateVsSwok {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .wok_container {
+        flex-direction: column;
+    }
+
+    .recept_wok_img_width {
+        width: 100%;
+        height: auto;
+    }
+
+    .wok_discription {
+        font-size: 14px;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+
+    .footer_impressum {
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .mailLink {
+        font-size: 8px;
+    }
+
+    .footer_img {
+        height: 16px;
+        width: 16px;
+    }
+
+    .social_media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 /* end of style of classes used in index.html*/
 
