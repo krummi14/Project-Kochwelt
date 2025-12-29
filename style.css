@@ -1,19 +1,26 @@
 /* start of style of classes used in all html files*/
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2') format('woff2'),
-         url('fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2') format('woff2'),
-         url('fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2') format('woff2'),
-         url('fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2') format('woff2'),
-         url('fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2') format('woff2'),
-         url('fonts/1Ptug8zYS_SKggPNyC0ITw.woff2') format('woff2'),
-         url('fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2') format('woff2'),
-         url('fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2') format('woff2'),
-         url('fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2') format('woff2'),
-         url('fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2') format('woff2');
+    src: url('./fonts/300/Raleway-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/400/Raleway-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap; /* Verhindert FOIT, verbessert Ladezeit */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/700/Raleway-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 html, body {
