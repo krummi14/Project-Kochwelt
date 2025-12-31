@@ -23,6 +23,11 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 html, body {
     height: 100%;
 }
@@ -32,6 +37,7 @@ body {
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -82,6 +88,11 @@ figcaption {
     text-align: center;
 }
 
+input {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(64,59,59);
+    font-size: 12px;
+}
 footer {
     background-color: rgb(64,59,59);
     height: 216px;
@@ -93,7 +104,8 @@ footer {
 }
 
 .nav_header {
-    height: 96px;  
+    height: 96px; 
+    width: 100%; 
     display: flex;    
     justify-content: space-between; 
     align-items: center;
@@ -106,9 +118,17 @@ footer {
     align-items: end;
 }
 
+.hide_mobile_menu {
+    display: none;
+}
+
+.resp_menu_box {
+        display: none;
+    }
+
 @media(min-width: 768px) and (max-width:1235px)
 {
-    .hide_mobile {
+    .nav_header {
         padding: 16px 80px;
     }
 
@@ -139,6 +159,10 @@ footer {
 
 @media(min-width: 320px) and (max-width:767px)
 {
+    h1 {
+        font-size: 32px;
+    }
+
     h2 {
         font-size: 20px;
         text-align: center;
@@ -155,7 +179,74 @@ footer {
     }
 
     footer {
-        padding: 64px 40px;
+        padding: 64px 16px;
+    }
+
+    .nav_header {
+        padding: 16px 16px;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .hide_mobile_menu_btn {
+        display: block;
+        background-color:rgb(2,128,0);
+        color: rgb(255,255,255);
+        padding: 8px 8px;
+        cursor: pointer;
+        border-width: 0;
+    }
+
+    .hide_mobile_menu_btn:hover {
+         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .resp_menu_box {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 250ms ease-in-out;
+        padding: 16px 0px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .resp_menu_closed {
+        transform: translateX(100%);
+
+    }
+
+    .hide_mobile_menu {
+        display: block;
+        background-color:rgb(2,128,0);
+        color: rgb(255,255,255);
+        padding: 8px 8px;
+        cursor: pointer;
+        border-width: 0;
+    }
+
+    .hide_mobile_menu:hover {
+         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .nav_link_resp_box {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    a {
+        font-size: 14px;
+        text-align: center;
     }
 
 }
@@ -183,9 +274,9 @@ footer {
 
 .navLink:hover {
     color: rgb(2,128,0);
-    text-decoration: underline;
-    text-underline-offset: 16px;
-    text-decoration-thickness: 4px;
+        text-decoration: underline;
+        text-underline-offset: 16px;
+        text-decoration-thickness: 4px;
 }
 
 .recept {
@@ -333,7 +424,7 @@ footer {
 @media(min-width: 320px) and (max-width: 767px)
 {
    .recept {
-        padding: 80px 40px;
+        padding: 80px 16px;
         flex-direction: column;
         align-items: center;
     } 
@@ -379,8 +470,8 @@ footer {
     }
 
     .fancyNew {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .recept_wok_img {
@@ -389,8 +480,8 @@ footer {
     }
 
     .plateVsSwok {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .wok_container {
@@ -431,6 +522,14 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .menu_logo {
+        height: 32px; 
+    }
+
+    .navLink_resp:hover {
+        color: rgb(2,128,0);
     }
 
 }
@@ -606,6 +705,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .impressum_header {
@@ -640,6 +740,36 @@ h4 {
 .link_impressum:hover {
     font-weight: bold;
 }
+
+@media(min-width: 768px) and (max-width:1235px)
+{
+    .impressum_container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px)
+{
+    .impressum_text {
+        font-size: 12px;
+    }
+
+    .link_impressum {
+        font-size: 12px;
+    }
+
+    .impressum_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .border_impressum_contact_container {
+        padding: 42px;
+    }
+    
+}
+
+
 
 /* end of style of classes used in impressum.html*/
 
@@ -684,7 +814,7 @@ h4 {
     outline: none; /*without standard focus ring*/
     transition: border 0.2s ease, box-shadow 0.2s ease;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Raleway', sans-serif;
     border-radius: 8px;
 }
@@ -693,6 +823,47 @@ h4 {
     border: 2px solid rgb(239,239,239);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
+
+@media(min-width: 768px) and (max-width:1235px)
+{
+    .contact_container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .button_padding {
+        padding: 16px 64px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px)
+{
+    .contact_container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .contact_input {
+        padding: 4px;
+    
+    }
+
+    .contact_textarea {
+        padding: 4px;
+        
+    }
+
+    .button_padding {
+        padding: 8px 8px;
+    }
+
+    .contact_form_container {
+        height: 320px;
+        width: 280px;
+    }
+
+}
+
 /* end of style of classes used in contact.html*/
 
 /* start of style of classes used in send_mail.html*/
@@ -700,34 +871,3 @@ h4 {
 .sendMail_header {
     padding: 64px 180px;
 }
-/* 1. Home
-- header;	Hintergrund: rgb(255,255,255)
-		Schriftfarbe: rgb(64,59,59)
-		Schriftfarbe Link: rgb(2,128,0)
-
-- Sektion 1; 	Überschrift: französische Croissants: rgb(0,0,0)
-		Hintergrund: rgb(255,255,255)
-		Beschreibung: rgb(101,101,136)
-		Button: rgb(2,128,0) (Button Text: rgb(255,255,255))
-
-- Sektion 2;	Überschrift: Lust auf was Neues? rgb(0,0,0)
-		Hintergrund: rgb(239,239,239)
-		Rezept Titel: rgb(0,0,0)
-- Sektion 3;	Überschrift: Pfanne vs. Wok – was ist besser: rgb(0,0,0)
-		Hintergrund: rgb(255,255,255)
-		Beschreibung: rgb(101,101,136)
-- footer;	Hintergrund: rgb(64,59,59)
-
-2. Rezeptseite
-- Überschrift:						rgb(0,0,0)
-- Hintergrund Dauer, Schwierigkeit & Datum: 	rgb(239,239,239)
-- Text Dauer, Schwierigkeit & Datum:		rgb(0,0,0)
-- Hintergrund Zutatenliste: 				rgb(255,255,255) & rgb(239,239,239)
-- Text Zutatenliste:					rgb(0,0,0)
-
-3. Kontaktseite
-- Fomularhintergrund:				rgb(220,220,220)
-- Kontaktieren sie uns:				rgb(35,35,35)
-- Formularfelder:					rgb(255,255,255)
-- Button Hintergrund:					rgb(2,128,0)
-- Button Text:						rgb(255,255,255) */
