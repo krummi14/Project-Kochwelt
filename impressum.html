@@ -12,6 +12,7 @@
 <body>
     <header class="nav_header">
         <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+        <button class="hide_mobile_menu" onclick="toggleRespMenu()">Menü</button>
         <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
             <a class="navLink" href="chili.html">Rezept des Tages</a>
@@ -19,6 +20,16 @@
             <a class="navLink" href="impressum.html">Impressum</a>
         </nav>
     </header>
+
+    <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
+        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">Menü</button>
+        <nav class="nav_link_resp_box">
+            <a class="navLink_resp" href="index.html">Start</a>
+            <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
+            <a class="navLink_resp" href="contact.html">Kontakt</a>
+            <a class="navLink_resp" href="impressum.html">Impressum</a>
+        </nav>
+    </section>
 
     <main>
         <section class="impressum_container">
@@ -29,10 +40,14 @@
                     74246 Eberstadt</p>
 
                 <h2 class="impressum_contact_header">Kontakt</h2>
-                <p class="impressum_text">Telefon: <a class="link_impressum" href="tel:01773989751" >+49 177 3989751</a> <br />
-                    E-Mail: <a class="mailLink link_impressum" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a></p>
+                <p class="impressum_text">Telefon: <a class="link_impressum" href="tel:01773989751">+49 177 3989751</a>
+                    <br />
+                    E-Mail: <a class="mailLink link_impressum"
+                        href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+                </p>
 
-                <p class="impressum_text">Quelle: <a class="link_impressum" href="https://www.e-recht24.de">eRecht24</a></p>
+                <p class="impressum_text">Quelle: <a class="link_impressum" href="https://www.e-recht24.de">eRecht24</a>
+                </p>
             </div>
         </section>
     </main>
@@ -56,6 +71,8 @@
             </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
