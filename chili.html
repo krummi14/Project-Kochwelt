@@ -13,6 +13,7 @@
 
     <header class="nav_header">
         <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+        <button class="hide_mobile_menu" onclick="toggleRespMenu()">Menü</button>
         <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
             <a class="navLink" href="chili.html">Rezept des Tages</a>
@@ -20,6 +21,16 @@
             <a class="navLink" href="impressum.html">Impressum</a>
         </nav>
     </header>
+
+    <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
+        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">Menü</button>
+        <nav class="nav_link_resp_box">
+            <a class="navLink_resp" href="index.html">Start</a>
+            <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
+            <a class="navLink_resp" href="contact.html">Kontakt</a>
+            <a class="navLink_resp" href="impressum.html">Impressum</a>
+        </nav>
+    </section>
 
     <main>
         <header class="recept_header">
