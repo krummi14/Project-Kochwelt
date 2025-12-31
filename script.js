@@ -102,3 +102,9 @@ function scaleIngredient() {
     calculateAmount("amount_oliveoil", 2);
     checkValue("amount_oliveoil", 2);
 }
+
+// function for toggle responsive menu (add and remove div-container with id = nav_menu_resp)
+function toggleRespMenu() {
+    // get Element with id = nav_menu_resp and toggle class resp_menu_closed
+    document.getElementById('nav_menu_resp').classList.toggle('resp_menu_closed');
+}
