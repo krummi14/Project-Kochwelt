@@ -730,6 +730,9 @@ li {
 @media(min-width: 320px) and (max-width:767px)
 {
     .recept_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -740,6 +743,7 @@ li {
 
     .info_container {
         flex-direction: column;
+        align-items: center;
         gap: 8px;
         font-size: 14px;
     }
@@ -749,7 +753,7 @@ li {
     }
 
     .seperator {
-        margin-top: 40px;
+        margin-top: 16px;
     }
 
     .portion_form {
