@@ -60,8 +60,10 @@
 
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
+                <span class="hide_mobile_form">
                 <input id="amount" value="4" min="1" max="20" type="number">
                 <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
+                </span>
             </form>
 
             <section class="ingredientsList_section">
@@ -76,7 +78,7 @@
                     <li class="ingredient_text"><div id="amount_tomatopaste">50</div>g Tomatenmark</li>
                     <li class="ingredient ingredient_text"><div class="textspace" id="amount_paprikapowder">2</div>TL Paprikapulver, edelsüß</li>
                     <li class="ingredient_text"><div class="textspace" id="amount_oliveoil">2</div>EL Olivenöl</li>
-                    <li>Salz</li>
+                    <li class="ingredient">Salz</li>
                     <li>Pfeffer</li>
                 </ul>
             </section>
