@@ -62,6 +62,17 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
 p {
     font-size: 16px;
     color: rgb(64,59,59);
@@ -71,7 +82,7 @@ p {
 .button {
     background-color:rgb(2,128,0);
     color: rgb(255,255,255);
-    padding: 16px 64px;
+    padding: 12px 64px;
     cursor: pointer;
     border-width: 0;
 }
@@ -133,7 +144,11 @@ footer {
     }
 
     h2 {
-    font-size: 24px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 
     a {
@@ -168,6 +183,13 @@ footer {
         text-align: center;
     }
 
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
 
     .marg_btn {
         padding: 8px 48px;
@@ -183,7 +205,7 @@ footer {
     }
 
     .nav_header {
-        padding: 16px 16px;
+        padding: 32px 16px;
     }
 
     .nav_menu {
@@ -215,7 +237,7 @@ footer {
         top: 0;
         right: 0;
         transition: all 250ms ease-in-out;
-        padding: 16px 0px;
+        padding: 32px 0px;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     }
 
@@ -242,6 +264,10 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    tbody {
+        font-size: 12px;
     }
 
     a {
@@ -623,19 +649,8 @@ li {
     border-radius: 8px;
 }
 
-h3 {
-    font-size: 24px;
-    margin: 24px 0;
-}
-
 .preparation_text {
     text-align: justify;
-}
-
-h4 {
-    font-size: 16px;
-    margin-top: 32px;
-    margin-bottom: 8px;
 }
 
 .nutritionalValue_header {
@@ -675,7 +690,7 @@ h4 {
 }
 
 .creator_name {
-    font-size: 24px;
+    font-size: 16px;
     padding-left: 32px;
 }
 
@@ -694,6 +709,84 @@ h4 {
 
 .textspace {
     margin-right: 4px;
+}
+
+@media(min-width: 768px) and (max-width:1235px)
+{
+    .recept_header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .chili_recept {
+        padding: 0 80px;
+    }
+
+    #amount {
+        height: 32px;
+    }
+}
+
+@media(min-width: 320px) and (max-width:767px)
+{
+    .recept_header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .chili_recept {
+        padding: 0 16px;
+    }
+
+    .info_container {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .info_icon_container {
+        width: 160px;
+    }
+
+    .seperator {
+        margin-top: 40px;
+    }
+
+    .portion_form {
+        flex-direction: column;
+    }
+
+    .label_amount {
+        margin-bottom: 8px;
+    }
+
+    #amount {
+        width: 80px;
+    }
+
+    .button {
+        padding: 12px 24px;
+    }
+
+    .hide_mobile_form {
+        margin-bottom: 32px;
+    }
+
+    .nutritionalValue_table {
+        border-spacing: 4px;
+    }
+
+    .profile_img {
+        width: 40px;
+    }
+
+    .creator_name {
+        font-size: 12px;
+    }
+
+    ul {
+        font-size: 14px;
+    }
 }
 /* end of style of classes used in chili.html*/
 
@@ -778,7 +871,7 @@ h4 {
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 0 180px;
+    padding: 64px 180px;
 }
 
 .contact_form_container {
