@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chili con Carne Rezept</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/logo_small.png"> 
+    <link rel="icon" href="./img/logo_small.png">
 </head>
 
 <body>
-
     <header class="nav_header">
-        <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        <button class="hide_mobile_menu" onclick="toggleRespMenu()">Menü</button>
+        <a href="index.html">
+            <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+        </a>
+        <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
         <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
             <a class="navLink" href="chili.html">Rezept des Tages</a>
@@ -23,7 +24,7 @@
     </header>
 
     <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
-        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">Menü</button>
+        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">|||</button>
         <nav class="nav_link_resp_box">
             <a class="navLink_resp" href="index.html">Start</a>
             <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
@@ -35,7 +36,7 @@
     <main>
         <header class="recept_header">
             <h2>Chili con Carne</h2>
-            <img class="chili_img" src="./img/chili.jpg" alt="picture of chili con carne">
+            <img class="recept_img" src="./img/chili.jpg" alt="picture of chili con carne">
 
             <section class="info_container">
                 <span class="info_icon_container">
@@ -61,23 +62,43 @@
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
                 <span class="hide_mobile_form">
-                <input id="amount" value="4" min="1" max="20" type="number">
-                <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
+                    <input id="amount" value="4" min="1" max="20" type="number">
+                    <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
                 </span>
             </form>
 
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
-                    <li class="ingredient ingredient_text"> <div id="amount_mincemeat">500</div>g Rinderhackfleisch</li>
-                    <li class="ingredient_text"><div id="amount_tomato">800</div>g passierte Tomaten</li>
-                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_paprika">1</div>rote Paprikaschote(n)</li>
-                    <li class="ingredient_text"><div class="textspace" id="amount_garlic">1</div> große Knoblauchzehe(n)</li>
-                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_beans">1</div>Dose(n) Kidneybohnen</li>
-                    <li class="ingredient_text"><div class="textspace" id="amount_corn">1</div>Dose(n) Mais</li>
-                    <li class="ingredient ingredient_text"> <div class="textspace" id="amount_onion">1</div>Zwiebel(n)</li>
-                    <li class="ingredient_text"><div id="amount_tomatopaste">50</div>g Tomatenmark</li>
-                    <li class="ingredient ingredient_text"><div class="textspace" id="amount_paprikapowder">2</div>TL Paprikapulver, edelsüß</li>
-                    <li class="ingredient_text"><div class="textspace" id="amount_oliveoil">2</div>EL Olivenöl</li>
+                    <li class="ingredient ingredient_text">
+                        <div id="amount_mincemeat">500</div>g Rinderhackfleisch
+                    </li>
+                    <li class="ingredient_text">
+                        <div id="amount_tomato">800</div>g passierte Tomaten
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <div class="textspace" id="amount_paprika">1</div>rote Paprikaschote(n)
+                    </li>
+                    <li class="ingredient_text">
+                        <div class="textspace" id="amount_garlic">1</div> große Knoblauchzehe(n)
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <div class="textspace" id="amount_beans">1</div>Dose(n) Kidneybohnen
+                    </li>
+                    <li class="ingredient_text">
+                        <div class="textspace" id="amount_corn">1</div>Dose(n) Mais
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <div class="textspace" id="amount_onion">1</div>Zwiebel(n)
+                    </li>
+                    <li class="ingredient_text">
+                        <div id="amount_tomatopaste">50</div>g Tomatenmark
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <div class="textspace" id="amount_paprikapowder">2</div>TL Paprikapulver, edelsüß
+                    </li>
+                    <li class="ingredient_text">
+                        <div class="textspace" id="amount_oliveoil">2</div>EL Olivenöl
+                    </li>
                     <li class="ingredient">Salz</li>
                     <li>Pfeffer</li>
                 </ul>
@@ -163,23 +184,20 @@
     </main>
 
     <footer>
-        <a class="footer_impressum" href="impressum.html">Impressum</a>
+        <div>
+        <a class="footer_img" href="index.html">
+            <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+        </a>
+        <p class="slogan_footer">Hier schmeckt es noch</p>
+        </div>
         <address class="mailLink_container">
             <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">Christian Brazen</a>
             <!--placeholder for mailadress of teammate-->
             <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
             <!--placeholder for mailadress of teammate-->
         </address>
-        <div class="social_media">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank">
-                <img class="footer_img" src="./img/facebook_logo.png" alt="facebook">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="footer_img" src="./img/instagrram_logo.png" alt="instagram">
-            </a>
-        </div>
     </footer>
 
     <script src="script.js"></script>
