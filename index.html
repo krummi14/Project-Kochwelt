@@ -11,9 +11,11 @@
 
 <body>
 
-<header class="nav_header">
-        <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        <button class="hide_mobile_menu" onclick="toggleRespMenu()">Menü</button>
+    <header class="nav_header">
+        <a href="index.html">
+            <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+        </a>
+        <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
         <nav class="nav_menu">
             <a class="navLink" href="index.html">Start</a>
             <a class="navLink" href="chili.html">Rezept des Tages</a>
@@ -23,7 +25,7 @@
     </header>
 
     <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
-        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">Menü</button>
+        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">|||</button>
         <nav class="nav_link_resp_box">
             <a class="navLink_resp" href="index.html">Start</a>
             <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
@@ -64,16 +66,16 @@
                         <img class="recept_wok_img" src="./img/croissant.jpg" alt="picture of first recept">
                         <!--croissant.jpg is placeholder for picture of first meal-->
                         <figcaption>
-                            Frische Croissants
+                            Süße Zimtwaffeln
                         </figcaption>
                     </figure>
                 </a>
-                <a class="quickLink" href="recept.html"> <!--recept.html is placeholder for second meal-->
+                <a class="quickLink" href="caesar.html"> <!--recept.html is placeholder for second meal-->
                     <figure>
-                        <img class="recept_wok_img" src="./img/croissant.jpg" alt="picture of first recept">
+                        <img class="recept_wok_img" src="./img/caesar salad.jpg" alt="picture of ceasar salad">
                         <!--croissant.jpg is placeholder for picture of second meal-->
                         <figcaption>
-                            Frische Croissants
+                            Frischen Salat
                         </figcaption>
                     </figure>
                 </a>
@@ -102,23 +104,20 @@
     </main>
 
     <footer>
-        <a class="footer_impressum" href="impressum.html">Impressum</a>
+        <div>
+        <a class="footer_img" href="index.html">
+            <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+        </a>
+        <p class="slogan_footer">Hier schmeckt es noch</p>
+        </div>
         <address class="mailLink_container">
             <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">Christian Brazen</a>
             <!--placeholder for mailadress of teammate-->
             <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
             <!--placeholder for mailadress of teammate-->
         </address>
-        <div class="social_media">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank">
-                <img class="footer_img" src="./img/facebook_logo.png" alt="facebook">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img class="footer_img" src="./img/instagrram_logo.png" alt="instagram">
-            </a>
-        </div>
     </footer>
 
     <script src="script.js"></script>
