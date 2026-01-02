@@ -85,6 +85,8 @@ p {
     padding: 12px 64px;
     cursor: pointer;
     border-width: 0;
+    margin-left: 54px;
+    margin-right: 54px;
 }
 
 .button:hover {
@@ -112,6 +114,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer_img_width {
+    width: 160px;
+}
+
+.slogan_footer {
+    color: white;
 }
 
 .nav_header {
@@ -219,6 +229,7 @@ footer {
         padding: 8px 8px;
         cursor: pointer;
         border-width: 0;
+        transform: rotate(90deg);
     }
 
     .hide_mobile_menu_btn:hover {
@@ -253,6 +264,7 @@ footer {
         padding: 8px 8px;
         cursor: pointer;
         border-width: 0;
+        transform: rotate(90deg);
     }
 
     .hide_mobile_menu:hover {
@@ -568,7 +580,7 @@ footer {
     padding-top: 80px;
 }
 
-.chili_img {
+.recept_img {
     width: 100%;
     object-fit: cover;
     height: 200px;
@@ -598,6 +610,10 @@ footer {
 }
 
 .chili_recept {
+    padding: 0 180px;
+}
+
+.ceasar_recept {
     padding: 0 180px;
 }
 
@@ -817,7 +833,7 @@ li {
     text-align: center;
 }
 
-.border_impressum_contact_container {
+.border_impressum_container {
     border: 4px solid rgb(239,239,239);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 64px;
@@ -881,8 +897,8 @@ li {
 .contact_form_container {
     display: flex;
     flex-direction: column;
-    align-items: start;
     margin: 64px 0;
+    background-color: rgb(219,219,219);
 }
 
 .contact_input {
@@ -914,6 +930,11 @@ li {
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
     border-radius: 8px;
+}
+
+.border_contact_container {
+    border-radius: 24px;
+    padding: 32px;
 }
 
 .contact_textarea:focus {
@@ -967,4 +988,284 @@ li {
 
 .sendMail_header {
     padding: 64px 180px;
+}
+
+/* end of style of classe used in send_mail.html*/
+
+/* start of style of classes used in ceasar.html*/
+#portionenInput {
+    border: 2px solid rgb(239,239,239);
+    height: 42px;
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none; /*without standard focus ring*/
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+#portionenInput:focus {
+    border: 2px solid rgb(239,239,239);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.titel_rezept {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+.section1 {
+
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    flex-direction: column;
+}
+
+.salat {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.uhr {
+    display: flex;
+    height: 7px;
+    width: 7px;
+    padding-bottom: 1px;
+    margin-right: 3px;
+}
+
+.uhr_kasten {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+.text_kasten {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 8px;
+    margin: 0;
+
+}
+
+.hirn {
+    display: flex;
+    height: 7px;
+    width: 7px;
+    padding-bottom: 1px;
+    margin-right: 3px;
+}
+
+.hirn_kasten {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+.datum {
+    display: flex;
+    height: 7px;
+    width: 7px;
+    padding-top: 1px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.datum_kasten {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.reihenfolge_kasten {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.hr_linie {
+    display: flex;
+    height: 1px;
+    padding-right: 0;
+    margin-top: 30px;
+    background-color: rgb(240, 240, 240);
+}
+
+.zutaten {
+    display: flex;
+    margin-left: 70px;
+}
+
+.portionen_berechnung {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text_berechnung {
+    display: flex;
+    font-style: "Raleway", sans-serif;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-right: 8px;
+    border-style: 1px;
+
+}
+
+.anzahl_portionen {
+    display: flex;
+    margin-top: 5px;
+    width: 110px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+    border-style: 1px;
+    border-color: rgb(240, 240, 240);
+}
+
+.portionen {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    background-color: #008000;
+    color: white;
+    border-color: transparent;
+    margin-top: 5px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    height: 21px;
+    width: 100px;
+}
+
+.rezept_liste {
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.einzelne_zutaten1 {
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(240, 240, 240);
+    font-size: 10px;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+
+}
+
+.einzelne_zutaten2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.zubereitung {
+    margin-left: 70px;
+}
+
+.zubereitung_titel {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.zubereitung_text {
+    font-family: "Raleway", sans-serif;
+    font-size: 9px;
+}
+
+.uhr_kasten_section3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+
+
+}
+
+.rezept_erstellt {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    padding-top: 10px;
+    flex-direction: row;
+}
+
+.rezept_ersteller {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+}
+
+.ersteller_bild {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.name_ersteller {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    align-items: center;
+    text-align: center;
+    padding-left: 25px;
 }
