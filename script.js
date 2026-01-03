@@ -17,7 +17,9 @@ function sendMail(event) {
     });
 }
 
+// function for chili.html by Daniel Krummhauer
 // function calculateAmount(): Calculates the amount of ingredient after "onclick" on button with class = button
+
 function calculateAmount(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount 
@@ -154,7 +156,7 @@ function berechnePortionen() {
 }
 
 //Legt die Grenzen fest zwischen einer Portion bis 20 Portionen
-function checkValue() {
+function checkWert() {
 
     let myvalue = document.getElementById("portionenInput").value;
 
@@ -187,4 +189,4 @@ function checkValue() {
 //Schritt 3: Event Listener für den Button  --> Button reagiert auf den klick und rechnet die funktion *berechnePortionen* aus (Schritt 1)
 //portionenButton muss als Id innerhalb des button tags stehen// 
 document.getElementById('portionenButton').addEventListener('click', berechnePortionen);
-document.getElementById('portionenButton').addEventListener('click', checkValue);
+document.getElementById('portionenButton').addEventListener('click', checkWert);
