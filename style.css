@@ -169,7 +169,7 @@ footer {
     }
 
     .button {
-        padding: 8px 48px;
+        padding: 12px 48px;
     }
 
     footer {
@@ -246,7 +246,7 @@ footer {
         position: absolute;
         top: 0;
         right: 0;
-        transition: all 250ms ease-in-out;
+        transition: all 125ms ease-in-out;
         padding: 32px 0px;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     }
@@ -282,7 +282,7 @@ footer {
     }
 
     a {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
     }
 
@@ -291,12 +291,12 @@ footer {
 /* end of style of classes used in all html files (global)*/
 
 /* start of style of classes used in index.html*/
-.croissant_img {
+.recept_index_img {
     width: 500px;
     border-radius: 8px;
 }
 
-.display_none_croissantImg {
+.display_none_receptImg {
      display: none;
 }
 
@@ -321,13 +321,13 @@ footer {
     display: flex;
 }
 
-.croissant_recept_container {
+.recept_container {
     display: flex;
     flex-direction: column;
     padding-left: 48px;
 }
 
-.croissant_discription {
+.recept_discription {
     padding-top: 32px;
     padding-bottom: 120px;
 }
@@ -404,11 +404,6 @@ footer {
     margin-bottom: 8px;
 }
 
-.footer_img {
-    height: 40px;
-    width: 40px;
-}
-
 .footer_impressum {
     font-size: 16px;
     color: rgb(255,255,255);
@@ -416,11 +411,11 @@ footer {
 
 @media(min-width: 768px) and (max-width:1235px)
 {
-    .croissant_img {
+    .recept_index_img {
         height: 250px;
     }
 
-    .croissant_recept_container {
+    .recept_container {
         padding-left: 24px;
     }
 
@@ -428,12 +423,12 @@ footer {
         padding: 80px 80px;
     }
 
-    .croissant_discription {
+    .recept_discription {
         padding-top: 16px;
         padding-bottom: 24px;
     }
 
-    .display_none_croissantImg {
+    .display_none_receptImg {
         display: none;
     }
 
@@ -466,7 +461,7 @@ footer {
         align-items: center;
     } 
 
-    .croissant_recept_container {
+    .recept_container {
         padding-left: 0;
         align-items: center;
     }
@@ -475,11 +470,11 @@ footer {
         text-align: center;
     }
 
-    .croissant_discription {
+    .recept_discription {
         padding-bottom: 32px;
     }
 
-    .croissant_img {
+    .recept_index_img {
         width: 100%;
     }
 
@@ -493,7 +488,7 @@ footer {
         align-items: center;
     }
 
-    .display_none_croissantImg {
+    .display_none_receptImg {
         display: block;
     }
 
@@ -547,12 +542,7 @@ footer {
     }
 
     .mailLink {
-        font-size: 8px;
-    }
-
-    .footer_img {
-        height: 16px;
-        width: 16px;
+        font-size: 10px;
     }
 
     .social_media {
@@ -567,6 +557,14 @@ footer {
 
     .navLink_resp:hover {
         color: rgb(2,128,0);
+    }
+
+    .footer_img_width {
+        width: 120px;
+    }
+
+    .slogan_footer {
+        font-size: 10px;
     }
 
 }
@@ -613,11 +611,7 @@ footer {
     align-items: center;
 }
 
-.chili_recept {
-    padding: 0 180px;
-}
-
-.ceasar_recept {
+.recept_padding {
     padding: 0 180px;
 }
 
@@ -626,22 +620,6 @@ footer {
     height: 1px;
     width: 100%;
     margin-top: 56px;
-}
-
-#amount {
-    border: 2px solid rgb(239,239,239);
-    height: 42px;
-    width: 200px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    outline: none; /*without standard focus ring*/
-    transition: border 0.2s ease, box-shadow 0.2s ease;
-    flex-grow: 1;
-}
-
-#amount:focus {
-    border: 2px solid rgb(239,239,239);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .portion_form {
@@ -653,6 +631,21 @@ footer {
     margin-right: 32px;
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+.input_calculate_portion {
+    border: 2px solid rgb(239,239,239);
+    height: 42px;
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none; /*without standard focus ring*/
+    transition: border 125ms ease, box-shadow 125ms ease;
+}
+
+.input_calculate_portion:focus {
+    border: 2px solid rgb(239,239,239);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ingredientsList {
@@ -707,6 +700,7 @@ li {
 .profile_img {
     border-radius: 100%;
     width: 80px;
+    height: 80px;
 }
 
 .creator_name {
@@ -738,9 +732,9 @@ li {
         padding-right: 80px;
     }
 
-    .chili_recept {
-        padding: 0 80px;
-    }
+    .recept_padding {
+    padding: 0 80px;
+    } 
 
     #amount {
         height: 32px;
@@ -757,9 +751,9 @@ li {
         padding-right: 16px;
     }
 
-    .chili_recept {
-        padding: 0 16px;
-    }
+    .recept_padding {
+    padding: 0 16px;
+    } 
 
     .info_container {
         flex-direction: column;
@@ -784,7 +778,7 @@ li {
         margin-bottom: 8px;
     }
 
-    #amount {
+    .input_calculate_portion {
         width: 80px;
     }
 
@@ -802,6 +796,7 @@ li {
 
     .profile_img {
         width: 40px;
+        height: 40px;
     }
 
     .creator_name {
@@ -884,6 +879,11 @@ li {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .border_impressum_container {
+        padding: 48px;
+    }
+
     .border_impressum_contact_container {
         padding: 42px;
     }
@@ -915,7 +915,7 @@ li {
     margin: 8px 0;
     padding: 16px;
     outline: none; /*without standard focus ring*/
-    transition: border 0.2s ease, box-shadow 0.2s ease;
+    transition: border 125ms ease, box-shadow 125ms ease;
     box-sizing: border-box;
     resize: none;
     border-radius: 8px;
@@ -933,7 +933,7 @@ li {
     margin: 8px 0;
     padding: 20px;
     outline: none; /*without standard focus ring*/
-    transition: border 0.2s ease, box-shadow 0.2s ease;
+    transition: border 125ms ease, box-shadow 125ms ease;
     box-sizing: border-box;
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
@@ -980,6 +980,7 @@ li {
 
     .contact_textarea {
         padding: 4px;
+        height: 120px;
         
     }
 
@@ -988,7 +989,7 @@ li {
     }
 
     .contact_form_container {
-        height: 320px;
+        height: 400px;
         width: 280px;
     }
 
@@ -1005,20 +1006,6 @@ li {
 /* end of style of classe used in send_mail.html*/
 
 /* start of style of classes used in ceasar.html*/
-#portionenInput {
-    border: 2px solid rgb(239,239,239);
-    height: 42px;
-    width: 200px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    outline: none; /*without standard focus ring*/
-    transition: border 0.2s ease, box-shadow 0.2s ease;
-}
-
-#portionenInput:focus {
-    border: 2px solid rgb(239,239,239);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-}
 
 .titel_rezept {
     display: flex;
