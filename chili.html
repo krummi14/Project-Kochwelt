@@ -56,17 +56,17 @@
             </section>
         </header>
 
-        <article class="chili_recept">
+        <article class="recept_padding">
             <div class="seperator"></div>
 
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
                 <span class="form_button_input hide_mobile_form">
-                    <input id="amount" value="4" min="1" max="20" type="number">
+                    <input id="amount" class="input_calculate_portion" value="4" min="1" max="20" type="number" required>
                     <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
                 </span>
             </form>
-
+            
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
                     <li class="ingredient ingredient_text">
@@ -185,21 +185,20 @@
 
     <footer>
         <div>
-        <a class="footer_img" href="index.html">
-            <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
-        </a>
-        <p class="slogan_footer">Hier schmeckt es noch</p>
+            <a class="footer_img" href="index.html">
+                <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+            </a>
+            <p class="slogan_footer">Hier schmeckt es noch!</p>
         </div>
         <address class="mailLink_container">
             <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
             <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">Christian Brazen</a>
-            <!--placeholder for mailadress of teammate-->
+            <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
             <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-            <!--placeholder for mailadress of teammate-->
         </address>
     </footer>
 
+    <script src="script_chili.js"></script>
     <script src="script.js"></script>
 </body>
 
