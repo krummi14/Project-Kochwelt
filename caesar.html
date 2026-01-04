@@ -56,14 +56,15 @@
         </section>
     </header>
 
-    <article class="ceasar_recept">
+    <article class="recept_padding">
 
         <div class="seperator"></div>
 
         <form class="portion_form">
             <label class="label_amount" for="amount">Zutaten für</label>
             <span class="form_button_input hide_mobile_form">
-                <input id="portionenInput" value="4" min="1" max="20" step="1" type="number">
+                <input id="portionenInput" class="input_calculate_portion" value="4" min="1" max="20" step="1"
+                    type="number" required>
                 <button id="portionenButton" class="button" button type="button" value="klick mich">Portionen</button>
             </span>
         </form>
@@ -175,19 +176,18 @@
             <a class="footer_img" href="index.html">
                 <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
             </a>
-            <p class="slogan_footer">Hier schmeckt es noch</p>
+            <p class="slogan_footer">Hier schmeckt es noch!</p>
         </div>
         <address class="mailLink_container">
             <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
             <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">Christian Brazen</a>
-            <!--placeholder for mailadress of teammate-->
+            <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
             <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-            <!--placeholder for mailadress of teammate-->
         </address>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script_caesar.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
