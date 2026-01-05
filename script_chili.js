@@ -4,7 +4,7 @@ function calculateAmount(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount 
     let myInput = document.getElementById("amount").value;
-        console.log(myInput);
+    console.log(myInput);
     // create variable basic portion for four (4) portions
     let basicPortion = 4;
 
@@ -23,20 +23,25 @@ function calculateAmount(id, referenceAmount) {
 
 // function checkValue(): is checking value of myInput. Min=1 and Max=20 
 // -> If borders are not fully observed, the calue does not change (corresponds for four portions)
+let alertShown = false;
+
 function checkValue(id, referenceAmount) {
 
     // create variable myInput and read value of id = amount
     let myInput = document.getElementById("amount").value;
+    
 
     if (myInput < 1 || myInput > 20) {
-    
+
         // writes referenceAmount into HTML
         document.getElementById(id).innerHTML = referenceAmount;
         console.log("Value is not valid");
+        return false;
     }
 
     else {
         console.log("Value is valid");
+        return true;
     }
 }
 
@@ -44,43 +49,52 @@ function checkValue(id, referenceAmount) {
 // therefore referenceAmount of all ingredient-ids are necessary
 function scaleIngredient() {
 
+    // Variable invalidFound
+    let invalidFound = false;
+
     // scales "Rinderhackfleisch" 
     calculateAmount("amount_mincemeat", 500);
-    checkValue("amount_mincemeat", 500);
+    invalidFound |= !checkValue("amount_mincemeat", 500);
 
     // scales "passierte Tomaten" 
     calculateAmount("amount_tomato", 800);
-    checkValue("amount_tomato", 800);
+    invalidFound |= !checkValue("amount_tomato", 800);
 
     // scales "Paprikaschote" 
     calculateAmount("amount_paprika", 1);
-    checkValue("amount_paprika", 1);
+    invalidFound |= !checkValue("amount_paprika", 1);
 
     // scales "Knoblauchzehe" 
     calculateAmount("amount_garlic", 1);
-    checkValue("amount_garlic", 1);
+    invalidFound |= !checkValue("amount_garlic", 1);
 
     // scales "Kidneybohnen" 
     calculateAmount("amount_beans", 1);
-    checkValue("amount_beans", 1);
+    invalidFound |= !checkValue("amount_beans", 1);
 
     // scales "Mais" 
     calculateAmount("amount_corn", 1);
-    checkValue("amount_corn", 1);
+    invalidFound |= !checkValue("amount_corn", 1);
 
     // scales "Zwiebel" 
     calculateAmount("amount_onion", 1);
-    checkValue("amount_onion", 1);
+    invalidFound |= !checkValue("amount_onion", 1);
 
     // scales "Tomatenmark" 
     calculateAmount("amount_tomatopaste", 50);
-    checkValue("amount_tomatopaste", 50);
+    invalidFound |= !checkValue("amount_tomatopaste", 50);
 
     // scales "Paprikapulver"
     calculateAmount("amount_paprikapowder", 2);
-    checkValue("amount_paprikapowder", 2);
+    invalidFound |= !checkValue("amount_paprikapowder", 2);
 
     // scales "Olivenöl"
     calculateAmount("amount_oliveoil", 2);
-    checkValue("amount_oliveoil", 2);
+    invalidFound |= !checkValue("amount_oliveoil", 2);
+
+    // if requst and write alert() only once
+    if (invalidFound) {
+        alert("Der Wert sollte zwischen 1 und 20 sein!");
+    }
+
 }
