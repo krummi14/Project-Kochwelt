@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept</title>
+    <title>Caesar Salad</title>
     <link rel="icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,16 +12,18 @@
 <body class="body">
 
     <header class="nav_header">
-        <a href="index.html">
-            <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        </a>
-        <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
-        <nav class="nav_menu">
-            <a class="navLink" href="index.html">Start</a>
-            <a class="navLink" href="chili.html">Rezept des Tages</a>
-            <a class="navLink" href="contact.html">Kontakt</a>
-            <a class="navLink" href="impressum.html">Impressum</a>
-        </nav>
+        <div class="header_maxWidth">
+            <a href="index.html">
+                <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+            </a>
+            <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
+            <nav class="nav_menu">
+                <a class="navLink" href="index.html">Start</a>
+                <a class="navLink" href="chili.html">Rezept des Tages</a>
+                <a class="navLink" href="contact.html">Kontakt</a>
+                <a class="navLink" href="impressum.html">Impressum</a>
+            </nav>
+        </div>
     </header>
 
     <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
@@ -34,156 +36,160 @@
         </nav>
     </section>
 
-    <header class="recept_header">
-        <h2>Caesar Salad</h2>
-        <img class="recept_img" src="/img/caesar salad.jpg" alt="picture of ceasar salad">
+    <main>
+        <header class="recept_header recept_header_maxWidth">
+            <h2>Caesar Salad</h2>
+            <img class="recept_img" src="/img/caesar salad.jpg" alt="picture of ceasar salad">
 
-        <section class="info_container">
-            <span class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
-                <time>15 Min.</time>
-            </span>
-
-            <span class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/brain-solid.svg" alt="level">
-                <p>simple</p>
-            </span>
-
-            <span class="info_icon_container">
-                <img class="recept_icon" src="./img/icons/calendar-alt-regular.svg" alt="create date">
-                <time datetime="2025-12-25 23:30">25.12.2025</time>
-            </span>
-        </section>
-    </header>
-
-    <article class="recept_padding">
-
-        <div class="seperator"></div>
-
-        <form class="portion_form">
-            <label class="label_amount" for="amount">Zutaten für</label>
-            <span class="form_button_input hide_mobile_form">
-                <input id="portionenInput" class="input_calculate_portion" value="4" min="1" max="20" step="1"
-                    type="number" required>
-                <button id="portionenButton" class="button" button type="button" value="klick mich">Portionen</button>
-            </span>
-        </form>
-
-
-
-        <section class="ingredientsList_section">
-            <ul class="ingredientsList">
-                <li class="ingredient ingredient_text">
-                    <span class="textspace" id="eigelb">0.25</span>EL frisches Eigelb
-                </li>
-                <li class="ingredient_text">
-                    <span class="textspace" id="senf">0.25</span>TL Senf
-                </li>
-                <li class="ingredient ingredient_text">
-                    <span class="textspace" id="zitronensaft">0.63</span>EL Zitronensaft oder Weissweinessig
-                </li>
-                <li class="ingredient_text">
-                    <span class="textspace" id="worcestershire">0.25</span>TL Worcestershire-Sauce
-                </li>
-                <li class="ingredient ingredient_text">
-                    <span class="textspace" id="sonnenblumenoel">1.25</span>EL Sonnenblumenöl
-                </li>
-                <li class="ingredient_text">
-                    <span class="textspace" id="salzoben">0.13</span>TL Salz
-                </li>
-                <li class="ingredient ingredient_text">
-                    <span class="textspace" id="pfeffer">1</span>TL Pfeffer
-                </li>
-                <li class="ingredient_text">
-                    <span class="textspace" id="toast">1</span> Scheiben Toastbrot
-                </li>
-                <li class="ingredient ingredient_text">
-                    <span class="textspace" id="speck">3</span> Scheiben Bratspeck
-                </li>
-                <li class="ingredient_text">
-                    <span class="textspace" id="haenchen">100</span>g Hänchenbrust
-                </li>
-                <li class="ingredient ingredient_text"><span class="textspace" id="salzunten">0.5</span>TL Salz</li>
-                <li class="ingredient_text"><span class="textspace" id="lattich">0.5</span> Lattich</li>
-                <li class="ingredient ingredient_text"><span class="textspace" id="gurke">50</span>g Gurke</li>
-                <li class="ingredient_text"><span class="textspace" id="sbrinz">53</span>g Sbrinz</li>
-            </ul>
-        </section>
-
-        <section class="preparation_section">
-            <h3>Zubereitung</h3>
-
-            <span class="info_container">
+            <section class="info_container">
                 <span class="info_icon_container">
                     <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
-                    <time>ca. 15 Minuten</time>
+                    <time>15 Min.</time>
                 </span>
+
                 <span class="info_icon_container">
-                    <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
-                    <time>Gesamtzeit ca. 25 Minuten</time>
+                    <img class="recept_icon" src="./img/icons/brain-solid.svg" alt="level">
+                    <p>simple</p>
                 </span>
-            </span>
 
-            <p class="preparation_text">
-                Senf, Zitronensaft und Worcestershire-Sauce in einen Messbecher geben, Öl
-                dazugiessen, pürieren, bis eine cremige Sauce ensteht. Sauce würzen, zugedeckt kühl stellen.
-                Brot in Würfel schneiden, in einer beschichteten Bratpfanne bei mittlerer Hitze goldbraun röste,
-                herausnehmen, beiseite stellen. Specktranchen in derselben Pfanne ohne Fett langsam knusprig braten,
-                herausnehmen,
-                beiseite stellen.Hänchenbrust würzen, in derselben heissen Bratpfanne beidseitig je ca. 1Min. anbraten.
-                Hitze
-                reduziere, beidseitig je ca. 4Min. fertig braten. Herausnehmen, in Scheiben schneiden.
-                Lattich in grobe Streifen, Gurke in Würfel schneiden, mit der Salatsauce mischen. Käse mit dem
-                Sparschäler in Streifen abschälen, mit Croutons, Speck und Hänchenbrust auf dem Salat anrichtten.
-                Ich wünsche Dir mit meinem Caesar Salat Rezept einen <strong>guten Appetit!</strong>
-            </p>
-        </section>
+                <span class="info_icon_container">
+                    <img class="recept_icon" src="./img/icons/calendar-alt-regular.svg" alt="create date">
+                    <time datetime="2025-12-25 23:30">25.12.2025</time>
+                </span>
+            </section>
+        </header>
 
-        <section class="nutritionalValue-container">
-            <h3>Nährwerte</h3>
+        <article class="recept_padding">
 
-            <table class="nutritionalValue_table">
-                <caption class="nutritionalValue_header">Nährwerte pro Portion:</caption>
-                <tbody>
-                    <tr>
-                        <th class="nutritionalValue_info_header">Kalorien</th>
-                        <th class="nutritionalValue_info_header">Kolenhydrate</th>
-                        <th class="nutritionalValue_info_header">Eiweis</th>
-                        <th class="nutritionalValue_info_header">Fett</th>
-                    </tr>
-                    <tr>
-                        <td class="nutritionalValue_info">344 kcal</td>
-                        <td class="nutritionalValue_info">17,4 g</td>
-                        <td class="nutritionalValue_info">10,9 g</td>
-                        <td class="nutritionalValue_info">24,9 g</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <div class="seperator"></div>
 
-        <section class="creator_container">
-            <h4>Rezept erstellt von</h4>
+            <form class="portion_form">
+                <label class="label_amount" for="amount">Zutaten für</label>
+                <span class="form_button_input hide_mobile_form">
+                    <input id="portionenInput" class="input_calculate_portion" value="4" min="1" max="20" step="1"
+                        type="number" required>
+                    <button id="portionenButton" class="button" type="button" value="klick mich">Portionen</button>
+                </span>
+            </form>
 
-            <div class="profile_container">
-                <img class="profile_img" src="./img/thumbnail_IMG_6875.jpg" alt="profile picture">
-                <p class="creator_name">Mikel</p>
-            </div>
-        </section>
-    </article>
 
+
+            <section class="ingredientsList_section">
+                <ul class="ingredientsList">
+                    <li class="ingredient ingredient_text">
+                        <span class="textspace" id="eigelb">0.25</span>EL frisches Eigelb
+                    </li>
+                    <li class="ingredient_text">
+                        <span class="textspace" id="senf">0.25</span>TL Senf
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <span class="textspace" id="zitronensaft">0.63</span>EL Zitronensaft oder Weissweinessig
+                    </li>
+                    <li class="ingredient_text">
+                        <span class="textspace" id="worcestershire">0.25</span>TL Worcestershire-Sauce
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <span class="textspace" id="sonnenblumenoel">1.25</span>EL Sonnenblumenöl
+                    </li>
+                    <li class="ingredient_text">
+                        <span class="textspace" id="salzoben">0.13</span>TL Salz
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <span class="textspace" id="pfeffer">1</span>TL Pfeffer
+                    </li>
+                    <li class="ingredient_text">
+                        <span class="textspace" id="toast">1</span> Scheiben Toastbrot
+                    </li>
+                    <li class="ingredient ingredient_text">
+                        <span class="textspace" id="speck">3</span> Scheiben Bratspeck
+                    </li>
+                    <li class="ingredient_text">
+                        <span class="textspace" id="haenchen">100</span>g Hänchenbrust
+                    </li>
+                    <li class="ingredient ingredient_text"><span class="textspace" id="salzunten">0.5</span>TL Salz</li>
+                    <li class="ingredient_text"><span class="textspace" id="lattich">0.5</span> Lattich</li>
+                    <li class="ingredient ingredient_text"><span class="textspace" id="gurke">50</span>g Gurke</li>
+                    <li class="ingredient_text"><span class="textspace" id="sbrinz">53</span>g Sbrinz</li>
+                </ul>
+            </section>
+
+            <section class="preparation_section">
+                <h3>Zubereitung</h3>
+
+                <span class="info_container">
+                    <span class="info_icon_container">
+                        <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
+                        <time>ca. 15 Minuten</time>
+                    </span>
+                    <span class="info_icon_container">
+                        <img class="recept_icon" src="./img/icons/clock-regular.svg" alt="preparation">
+                        <time>Gesamtzeit ca. 25 Minuten</time>
+                    </span>
+                </span>
+
+                <p class="preparation_text">
+                    Senf, Zitronensaft und Worcestershire-Sauce in einen Messbecher geben, Öl
+                    dazugiessen, pürieren, bis eine cremige Sauce ensteht. Sauce würzen, zugedeckt kühl stellen.
+                    Brot in Würfel schneiden, in einer beschichteten Bratpfanne bei mittlerer Hitze goldbraun röste,
+                    herausnehmen, beiseite stellen. Specktranchen in derselben Pfanne ohne Fett langsam knusprig braten,
+                    herausnehmen,
+                    beiseite stellen.Hänchenbrust würzen, in derselben heissen Bratpfanne beidseitig je ca. 1Min.
+                    anbraten.
+                    Hitze
+                    reduziere, beidseitig je ca. 4Min. fertig braten. Herausnehmen, in Scheiben schneiden.
+                    Lattich in grobe Streifen, Gurke in Würfel schneiden, mit der Salatsauce mischen. Käse mit dem
+                    Sparschäler in Streifen abschälen, mit Croutons, Speck und Hänchenbrust auf dem Salat anrichtten.
+                    Ich wünsche Dir mit meinem Caesar Salat Rezept einen <strong>guten Appetit!</strong>
+                </p>
+            </section>
+
+            <section class="nutritionalValue-container">
+                <h3>Nährwerte</h3>
+
+                <table class="nutritionalValue_table">
+                    <caption class="nutritionalValue_header">Nährwerte pro Portion:</caption>
+                    <tbody>
+                        <tr>
+                            <th class="nutritionalValue_info_header">Kalorien</th>
+                            <th class="nutritionalValue_info_header">Kolenhydrate</th>
+                            <th class="nutritionalValue_info_header">Eiweis</th>
+                            <th class="nutritionalValue_info_header">Fett</th>
+                        </tr>
+                        <tr>
+                            <td class="nutritionalValue_info">344 kcal</td>
+                            <td class="nutritionalValue_info">17,4 g</td>
+                            <td class="nutritionalValue_info">10,9 g</td>
+                            <td class="nutritionalValue_info">24,9 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="creator_container">
+                <h4>Rezept erstellt von</h4>
+
+                <div class="profile_container">
+                    <img class="profile_img" src="./img/thumbnail_IMG_6875.jpg" alt="profile picture">
+                    <p class="creator_name">Mikel</p>
+                </div>
+            </section>
+        </article>
+    </main>
     <footer>
-        <div>
-            <a class="footer_img" href="index.html">
-                <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
-            </a>
-            <p class="slogan_footer">Hier schmeckt es noch!</p>
+        <div class="footer_maxWidth">
+            <div>
+                <a class="footer_img" href="index.html">
+                    <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+                </a>
+                <p class="slogan_footer">Hier schmeckt es noch!</p>
+            </div>
+            <address class="mailLink_container">
+                <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
+                <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+                <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
+                <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            </address>
         </div>
-        <address class="mailLink_container">
-            <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
-            <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
-            <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-        </address>
     </footer>
 
     <script src="./script_caesar.js"></script>
