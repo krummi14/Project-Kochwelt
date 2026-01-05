@@ -64,12 +64,14 @@ function checkWert() {
         document.getElementById('sbrinz').textContent = "53";
     
 
-        console.log("Wert ist nicht ok")
+        console.log("Wert ist nicht ok");
+
+        alert("Wert muss zwischen 1 und 20 sein!");
 
     }
     else {
 
-        console.log("Wert ist ok")
+        console.log("Wert ist ok");
 
     }
 }
