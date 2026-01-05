@@ -37,8 +37,6 @@ body {
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 main {
@@ -103,7 +101,7 @@ figcaption {
 input {
     font-family: 'Raleway', sans-serif;
     color: rgb(64,59,59);
-    font-size: 12px;
+    font-size: 16px;
 }
 footer {
     background-color: rgb(64,59,59);
@@ -119,18 +117,36 @@ footer {
     width: 160px;
 }
 
+.footer_maxWidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
 .slogan_footer {
     color: white;
 }
 
 .nav_header {
     height: 96px; 
-    width: 100%; 
     display: flex;    
     justify-content: space-between; 
     align-items: center;
     padding: 16px 180px; 
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header_maxWidth {
+    max-width: 1440px;
+    display: flex; 
+    width: 100%;   
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0 auto;
 }
 
 .nav_menu {
@@ -144,7 +160,7 @@ footer {
 
 .resp_menu_box {
         display: none;
-    }
+}
 
 @media(min-width: 768px) and (max-width:1235px)
 {
@@ -321,6 +337,12 @@ footer {
     display: flex;
 }
 
+.recept_maxWidth {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .recept_container {
     display: flex;
     flex-direction: column;
@@ -347,6 +369,7 @@ footer {
     padding: 0 180px;
     padding-top: 48px;
     padding-bottom: 88px;
+    margin: 0 auto;
 }
 
 .quickLink_container {
@@ -355,6 +378,7 @@ footer {
     justify-content: space-between;
     padding-top: 32px;
     width: 100%;
+    max-width: 1440px;
 }
 
 .quickLink:hover {
@@ -374,6 +398,8 @@ footer {
     display: flex;
     flex-direction: row;
     padding-top: 48px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .wok_discription {
@@ -433,7 +459,7 @@ footer {
     }
 
     .fancyNew {
-        padding: 0 80px;
+        padding: 32px 80px;
     }
 
     .recept_wok_img {
@@ -577,6 +603,12 @@ footer {
     padding-top: 80px;
 }
 
+.recept_header_maxWidth {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .recept_img {
     width: 100%;
     object-fit: cover;
@@ -613,6 +645,8 @@ footer {
 
 .recept_padding {
     padding: 0 180px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .seperator {
