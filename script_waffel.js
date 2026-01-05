@@ -11,7 +11,8 @@ document.getElementById("calc").addEventListener("click", () => {  // Holt aus d
             const text = item.dataset.text;                 // holt Einheit und Bezeichnung aus Data-text
             item.textContent = `${base} ${text}`;       // schreibt die Grundmenge wieder zurück weil die Grenzen misbraucht wurden
         });
-        console.log("Wert ist nicht ok")
+        console.log("Wert ist nicht ok");
+        alert("Wert muss zwischen 1 und 20 sein!");
     }
 
     else {
@@ -21,6 +22,6 @@ document.getElementById("calc").addEventListener("click", () => {  // Holt aus d
             const text = item.dataset.text;                 // holt Einheit und Bezeichnung aus Data-text
             item.textContent = `${base * p} ${text}`;       // schreibt die neue Mnege (Grundmenge * Portion) zurück in das li)
         });
-        console.log("Wert ist ok")
+        console.log("Wert ist ok");
     }
 });
