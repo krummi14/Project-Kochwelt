@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chili con Carne Rezept</title>
+    <title>Chili con Carne</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/logo_small.png">
 </head>
 
 <body>
     <header class="nav_header">
-        <a href="index.html">
-            <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        </a>
-        <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
-        <nav class="nav_menu">
-            <a class="navLink" href="index.html">Start</a>
-            <a class="navLink" href="chili.html">Rezept des Tages</a>
-            <a class="navLink" href="contact.html">Kontakt</a>
-            <a class="navLink" href="impressum.html">Impressum</a>
-        </nav>
+        <div class="header_maxWidth">
+            <a href="index.html">
+                <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+            </a>
+            <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
+            <nav class="nav_menu">
+                <a class="navLink" href="index.html">Start</a>
+                <a class="navLink" href="chili.html">Rezept des Tages</a>
+                <a class="navLink" href="contact.html">Kontakt</a>
+                <a class="navLink" href="impressum.html">Impressum</a>
+            </nav>
+        </div>
     </header>
 
     <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
@@ -34,7 +36,7 @@
     </section>
 
     <main>
-        <header class="recept_header">
+        <header class="recept_header recept_header_maxWidth">
             <h2>Chili con Carne</h2>
             <img class="recept_img" src="./img/chili.jpg" alt="picture of chili con carne">
 
@@ -62,11 +64,14 @@
             <form class="portion_form">
                 <label class="label_amount" for="amount">Zutaten für</label>
                 <span class="form_button_input hide_mobile_form">
-                    <input id="amount" class="input_calculate_portion" value="4" min="1" max="20" type="number" required>
+                    <input id="amount" class="input_calculate_portion" value="4" min="1" max="20" type="number"
+                        required>
                     <button onclick="scaleIngredient()" class="button" type="button">Portionen</button>
                 </span>
             </form>
-            
+
+            <div id="info_onclick"></div>
+
             <section class="ingredientsList_section">
                 <ul class="ingredientsList">
                     <li class="ingredient ingredient_text">
@@ -184,18 +189,20 @@
     </main>
 
     <footer>
-        <div>
-            <a class="footer_img" href="index.html">
-                <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
-            </a>
-            <p class="slogan_footer">Hier schmeckt es noch!</p>
+        <div class="footer_maxWidth">
+            <div>
+                <a class="footer_img" href="index.html">
+                    <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+                </a>
+                <p class="slogan_footer">Hier schmeckt es noch!</p>
+            </div>
+            <address class="mailLink_container">
+                <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
+                <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+                <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
+                <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+            </address>
         </div>
-        <address class="mailLink_container">
-            <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
-            <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
-            <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-        </address>
     </footer>
 
     <script src="script_chili.js"></script>
