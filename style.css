@@ -36,6 +36,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
+}
+
+.content {
+    position: relative;
     overflow-x: hidden;
 }
 
