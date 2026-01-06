@@ -10,119 +10,120 @@
 </head>
 
 <body>
+    <div class="content">
+        <header class="nav_header">
+            <div class="header_maxWidth">
+                <a href="index.html">
+                    <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
+                </a>
+                <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
+                <nav class="nav_menu">
+                    <a class="navLink" href="index.html">Start</a>
+                    <a class="navLink" href="chili.html">Rezept des Tages</a>
+                    <a class="navLink" href="contact.html">Kontakt</a>
+                    <a class="navLink" href="impressum.html">Impressum</a>
+                </nav>
+            </div>
+        </header>
 
-    <header class="nav_header">
-        <div class="header_maxWidth">
-        <a href="index.html">
-            <img class="menu_logo" src="./img/logo.png" alt="kochwelt logo">
-        </a>
-        <button class="hide_mobile_menu" onclick="toggleRespMenu()">|||</button>
-        <nav class="nav_menu">
-            <a class="navLink" href="index.html">Start</a>
-            <a class="navLink" href="chili.html">Rezept des Tages</a>
-            <a class="navLink" href="contact.html">Kontakt</a>
-            <a class="navLink" href="impressum.html">Impressum</a>
-        </nav>
-        </div>
-    </header>
+        <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
+            <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">|||</button>
+            <nav class="nav_link_resp_box">
+                <a class="navLink_resp" href="index.html">Start</a>
+                <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
+                <a class="navLink_resp" href="contact.html">Kontakt</a>
+                <a class="navLink_resp" href="impressum.html">Impressum</a>
+            </nav>
+        </section>
 
-    <section id="nav_menu_resp" class="resp_menu_box resp_menu_closed">
-        <button class="hide_mobile_menu_btn" onclick="toggleRespMenu()">|||</button>
-        <nav class="nav_link_resp_box">
-            <a class="navLink_resp" href="index.html">Start</a>
-            <a class="navLink_resp" href="chili.html">Rezept des Tages</a>
-            <a class="navLink_resp" href="contact.html">Kontakt</a>
-            <a class="navLink_resp" href="impressum.html">Impressum</a>
-        </nav>
-    </section>
-
-    <main>
+        <main>
 
 
-        <section class="recept">
-            <div class="recept_maxWidth">
-                <img class="recept_index_img display_none_img" src="./img/caesar salad.jpg" alt="croissant picture">
-                <div class="recept_container">
-                    <article class="text_align_respo">
-                        <h2>Caesar Salad</h2>
-                        <p class="recept_discription">
-                            Schmackhafter Caesar Salad kann auch zu Hause einfach zubereitet werden.
-                            Mit ca. 25min Gesamtaufwand kannst du einen wundervollen und frischen Snack zaubern.
-                        </p>
-                    </article>
-                    <div class="img_btn_container_repo">
-                        <img class="recept_index_img display_none_receptImg" src="./img/caesar salad.jpg"
-                            alt="caesarsalad picture">
-                        <a href="caesar.html">
-                            <button class="button marg_btn" type="button">Rezept öffnen</button>
-                        </a>
+            <section class="recept">
+                <div class="recept_maxWidth">
+                    <img class="recept_index_img display_none_img" src="./img/caesar salad.jpg" alt="croissant picture">
+                    <div class="recept_container">
+                        <article class="text_align_respo">
+                            <h2>Caesar Salad</h2>
+                            <p class="recept_discription">
+                                Schmackhafter Caesar Salad kann auch zu Hause einfach zubereitet werden.
+                                Mit ca. 25min Gesamtaufwand kannst du einen wundervollen und frischen Snack zaubern.
+                            </p>
+                        </article>
+                        <div class="img_btn_container_repo">
+                            <img class="recept_index_img display_none_receptImg" src="./img/caesar salad.jpg"
+                                alt="caesarsalad picture">
+                            <a href="caesar.html">
+                                <button class="button marg_btn" type="button">Rezept öffnen</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="fancyNew">
+                <h2>Lust auf was Neues?</h2>
+                <div class="quickLink_container">
+                    <a class="quickLink" href="zimtwaffel.html"> <!--recept.html is placeholder for first meal-->
+                        <figure>
+                            <img class="recept_wok_img" src="./img/waffles-2190961_1280.jpg"
+                                alt="picture of zimtwaffeln">
+                            <!--croissant.jpg is placeholder for picture of first meal-->
+                            <figcaption>
+                                Süße Zimtwaffeln
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="quickLink" href="caesar.html"> <!--recept.html is placeholder for second meal-->
+                        <figure>
+                            <img class="recept_wok_img" src="./img/caesar salad.jpg" alt="picture of ceasar salad">
+                            <!--croissant.jpg is placeholder for picture of second meal-->
+                            <figcaption>
+                                Frischen Salat
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="quickLink" href="chili.html">
+                        <figure>
+                            <img class="recept_wok_img" src="./img/chili.jpg" alt="picture of chili">
+                            <figcaption>
+                                Scharfes Chili
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+
+            <section class="plateVsSwok">
+                <h2>Pfanne vs. Wok - Was ist besser?</h2>
+                <figure class="wok_container">
+                    <figcaption class="wok_discription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Neque, id totam pariatur dolor tempora alias atque nam distinctio perspiciatis
+                        deleniti aliquam laboriosam facilis dicta eveniet consequatur nihil, odit sunt velit.
+                    </figcaption>
+                    <img class="recept_wok_img recept_wok_img_width" src="./img/wok.jpg" alt="picture of wok">
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer_maxWidth">
+                <div>
+                    <a class="footer_img" href="index.html">
+                        <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
+                    </a>
+                    <p class="slogan_footer">Hier schmeckt es noch!</p>
+                </div>
+                <address class="mailLink_container">
+                    <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
+                    <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
+                    <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
+                    <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
+                </address>
             </div>
-        </section>
-
-        <section class="fancyNew">
-            <h2>Lust auf was Neues?</h2>
-            <div class="quickLink_container">
-                <a class="quickLink" href="zimtwaffel.html"> <!--recept.html is placeholder for first meal-->
-                    <figure>
-                        <img class="recept_wok_img" src="./img/waffles-2190961_1280.jpg" alt="picture of zimtwaffeln">
-                        <!--croissant.jpg is placeholder for picture of first meal-->
-                        <figcaption>
-                            Süße Zimtwaffeln
-                        </figcaption>
-                    </figure>
-                </a>
-                <a class="quickLink" href="caesar.html"> <!--recept.html is placeholder for second meal-->
-                    <figure>
-                        <img class="recept_wok_img" src="./img/caesar salad.jpg" alt="picture of ceasar salad">
-                        <!--croissant.jpg is placeholder for picture of second meal-->
-                        <figcaption>
-                            Frischen Salat
-                        </figcaption>
-                    </figure>
-                </a>
-                <a class="quickLink" href="chili.html">
-                    <figure>
-                        <img class="recept_wok_img" src="./img/chili.jpg" alt="picture of chili">
-                        <figcaption>
-                            Scharfes Chili
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </section>
-
-        <section class="plateVsSwok">
-            <h2>Pfanne vs. Wok - Was ist besser?</h2>
-            <figure class="wok_container">
-                <figcaption class="wok_discription">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Neque, id totam pariatur dolor tempora alias atque nam distinctio perspiciatis
-                    deleniti aliquam laboriosam facilis dicta eveniet consequatur nihil, odit sunt velit.
-                </figcaption>
-                <img class="recept_wok_img recept_wok_img_width" src="./img/wok.jpg" alt="picture of wok">
-            </figure>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer_maxWidth">
-        <div>
-            <a class="footer_img" href="index.html">
-                <img class="footer_img_width" src="./img/logoweiss.png" alt="icon in white">
-            </a>
-            <p class="slogan_footer">Hier schmeckt es noch!</p>
-        </div>
-        <address class="mailLink_container">
-            <p class="copyright">&copy Copyright 2025 kochwelt-2470</p>
-            <a class="mailLink" href="mailto:mikelnreca@hotmail.com">mikelnreca@hotmail.com</a>
-            <a class="mailLink" href="mailto:cbarzen78@gmail.com">cbarzen78@gmail.com</a>
-            <a class="mailLink" href="mailto:d.krummhauer@gmail.com">d.krummhauer@gmail.com</a>
-        </address>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 
